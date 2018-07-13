@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#3c241b"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login Page"
+        android:textSize="50dp"
+        android:fontFamily="cursive"
+        android:textColor="#c26f4d"
+        />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/masklogo" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+
+        <AutoCompleteTextView
+            android:id="@+id/activity_login_email_auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Email"
+            android:text="123@45.com"
+            android:drawableLeft="@drawable/man20"
+            android:inputType="textEmailAddress"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/activity_login_passwordedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:drawableLeft="@drawable/key20"
+            android:text="12345"
+            android:inputType="textPassword"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/activity_login_login_button"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/login_button"
+        android:text="Login"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/activity_login_SignUp_button"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_button"
+        android:text="Sign-up"
+        android:textColor="#ffffff" />
+
+
+    />
+
+</LinearLayout>

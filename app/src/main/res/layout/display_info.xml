@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/display_info_edit1"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="Name"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/display_info_edit2"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="Address"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/display_info_click"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="display"/>
+
+    <TextView
+        android:id="@+id/display_info_text1"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Name"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/display_info_text2"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Address"
+        android:gravity="center"/>
+
+
+</LinearLayout>

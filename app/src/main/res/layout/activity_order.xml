@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="#3c241b">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Order Here"
+        android:textColor="#c26f4d"
+        android:textSize="40dp"
+        android:fontFamily="cursive"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <AutoCompleteTextView
+                        android:id="@+id/activity_order_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Item Name"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        /></android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity"
+                    android:textSize="20dp"
+                    android:textColor="#999999"
+                    android:layout_marginTop="10dp"/>
+                <Spinner
+                    android:id="@+id/activity_order_quantity"
+                    android:layout_width="250dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    >
+
+                </Spinner>
+
+                <EditText
+                    android:id="@+id/activity_order_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Time"
+                    android:gravity="center"
+                    android:focusableInTouchMode="false"
+                    />
+
+                <EditText
+                    android:id="@+id/activity_order_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:hint="Date" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <AutoCompleteTextView
+                        android:id="@+id/activity_order_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Delivery Location"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <AutoCompleteTextView
+                        android:id="@+id/activity_order_userid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Contact number"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <AutoCompleteTextView
+                        android:id="@+id/activity_order_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Customer Name"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        /></android.support.design.widget.TextInputLayout>
+
+                <ProgressBar
+                    android:id="@+id/activity_login_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginBottom="30dp"
+                    android:layout_gravity="center"
+
+                    />
+
+            </LinearLayout>
+
+        </ScrollView></LinearLayout>
+
+
+    <Button
+        android:id="@+id/activity_order_button"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:text="Order"
+        android:layout_gravity="center"
+        android:background="@drawable/login_button"
+        android:layout_marginTop="20dp"/>
+
+
+</LinearLayout>
